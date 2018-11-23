@@ -1,4 +1,6 @@
-FROM ubuntu:latest
+FROM ubuntu AS web100
+LABEL maintainer="Pieczykolan sacred_friday@o2.pl"
 RUN apt-get update
-RUN apt-get install httpd -y
-
+RUN apt-get install apache2 -y
+CMD ["apache2clt","-D","FOREGROUND"]
+EXPOSE 8080
