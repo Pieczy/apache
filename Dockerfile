@@ -1,5 +1,4 @@
-FROM ubuntu as mp1
-run apt-get update
-run apt-get install httpd -y
-
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install httpd -y
 
