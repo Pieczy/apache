@@ -1,5 +1,5 @@
-FROM apache as mp1
+FROM ubuntu as mp1
 run apt-get update
-run apt-get install apache -y
+run apt-get install httpd -y
 
 
